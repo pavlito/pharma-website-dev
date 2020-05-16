@@ -4,5 +4,4 @@ build/
 app/libs/
 *.map
 *.css
-app/**/*.html
-pinegrow.json
+
