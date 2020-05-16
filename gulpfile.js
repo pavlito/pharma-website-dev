@@ -58,7 +58,7 @@ gulp.task('copy-bootstrap', function() {
     return gulp.src([
             'node_modules/bootstrap/scss/**/*'
         ], { "base": "node_modules/" })
-        .pipe(gulp.dest('sass/bootstrap/'));
+        .pipe(gulp.dest('sass/'));
 });
 
 // gulp.task('bootstrap-dev', function() {
