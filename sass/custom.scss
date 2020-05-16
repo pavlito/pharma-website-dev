@@ -1,0 +1,198 @@
+/* Bootstrap theme customized with Pinegrow Web Editor */
+/* Vars go before the @import */
+/* Import the Bootstrap files */
+
+// Brand Colors
+$blue: #0068fc;
+$indigo: #6610f2;
+$purple: #6f42c1;
+$pink: #e83e8c;
+$red: #dc3545;
+$orange: #fbb325;
+$yellow: #f8ec00;
+$green: #00aa2d;
+$teal: #20c997;
+$cyan: #40b7fd;
+$white: #fff;
+$gray-100: #f6f8ff;
+$gray-200: #E2EEFF;
+$gray-300: #dee2e6;
+$gray-400: #DBDBDB;
+$gray-500: #c3c6cf;
+$gray-600: #989eb2;
+$gray-700: #495057;
+$gray-800: #5b6482;
+$gray-900: #434f78;
+$gray-1000: #151C26;
+$gray-1100: #2A3748;
+
+
+$blue-light: #01E3FB;
+$blue2:      #40B7FD;
+$cyan2:      #2DE8FC;
+$light2:     #F3F3F3;
+
+
+
+
+$box-shadow: #00255A;
+
+$grays: ();
+// stylelint-disable-next-line scss/dollar-variabl
+$grays: map-merge(
+  (
+    "100": $gray-100,
+    "200": $gray-200,
+    "300": $gray-300,
+    "400": $gray-400,
+    "500": $gray-500,
+    "600": $gray-600,
+    "700": $gray-700,
+    "800": $gray-800,
+    "900": $gray-900
+  ),
+  $grays
+);
+
+$colors: ();
+// stylelint-disable-next-line scss/dollar-variabl
+$colors: map-merge(
+  (
+    "blue":       $blue,
+    "indigo":     $indigo,
+    "purple":     $purple,
+    "pink":       $pink,
+    "red":        $red,
+    "orange":     $orange,
+    "yellow":     $yellow,
+    "green":      $green,
+    "teal":       $teal,
+    "cyan":       $cyan,
+    "white":      $white,
+    "gray":       $gray-600,
+    "gray-dark":  $gray-900,
+    "blue-light": $blue-light
+  ),
+  $colors
+);
+
+$primary:       $blue;
+$secondary:     $gray-600;
+$success:       $green;
+$info:          $cyan;
+$warning:       $yellow;
+$danger:        $red;
+$light:         $gray-100;
+$dark:          $gray-800;
+$text-muted:    $gray-500;
+
+$theme-colors: ();
+// stylelint-disable-next-line scss/dollar-variabl
+$theme-colors: map-merge(
+  (
+    "primary":    $primary,
+    "secondary":  $secondary,
+    "success":    $success,
+    "info":       $info,
+    "warning":    $warning,
+    "danger":     $danger,
+    "light":      $light,
+    "dark":       $dark,
+    "orange":     $orange,
+    "yellow":     $yellow,
+    "white":      $white,
+    "gray-dark":  $gray-900,
+    "gray-dark-2": $gray-1100,
+    "gray-light": $gray-200,
+    "blue-light": $blue-light,
+    "blue2":      $blue2
+  ),
+  $theme-colors
+);
+
+
+
+
+$spacer: 1rem;
+$spacers: ();
+// stylelint-disable-next-line scss/dollar-variable-default
+$spacers: map-merge(
+  (
+    0: 0,
+    1: ($spacer * .25),
+    2: ($spacer * .5),
+    3: $spacer,
+    4: ($spacer * 1.5),
+    5: ($spacer * 3),
+    6: ($spacer * 6)
+  ),
+  $spacers
+);
+
+
+$font-size-base:                    1rem;
+$font-family-sans-serif:            'fonts' ,-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$headings-font-weight:              bold;
+$body-color:                        $gray-800;
+$headings-color:                    $gray-900;
+$headings-line-height:              1.5;
+$font-size-lg:                      $font-size-base * 1.125;
+$navbar-light-color:                $gray-900;
+$navbar-light-hover-color:          $primary;
+$navbar-light-active-color:         $primary;
+$navbar-nav-link-padding-x:         1.25rem;
+$nav-link-padding-x:                2rem;
+$link-decoration:                   text-underline;
+$border-radius:                     0.5rem;
+$border-color:                      $gray-400;
+
+
+
+$navbar-padding-y:                  1rem;
+$navbar-light-toggler-border-color:  transparent;
+$navbar-light-toggler-icon-bg:      url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'><path stroke='#{$primary}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2.8' d='M5,7h20 M2,15h26 M5,23h20'/></svg>");
+// Section
+
+$section-padding-y: 7.5rem;
+
+
+
+
+// Buttons
+
+$input-btn-padding-y:               0.75rem;
+$btn-box-shadow:                    null;
+$btn-border-radius:                 5rem;
+$btn-border-radius-lg:              5rem;
+$input-btn-padding-y-lg:            .875rem;
+$input-btn-border-width:            2px;
+// Box Shadow
+
+$card-border-color:                 $gray-300;
+
+$box-shadow-sm:               0 .1875rem .625rem rgba($box-shadow, .15);
+$box-shadow:                  0 .3125rem 1.875rem rgba($box-shadow, .10);
+
+// Heading 
+
+$h-sup-font-size:             $font-size-base * 0.875;
+$h6-font-size:                $font-size-base * 1.125;
+// Icons
+
+
+
+
+
+$icomoon-font-family: "icons";
+$icomoon-font-path: "../fonts/icons";
+
+$icon-arrow-circle-down: "\e900";
+$icon-checkmark-circle: "\e901";
+$icon-checkmark-outline: "\e902";
+$icon-email: "\e903";
+$icon-star: "\e904";
+
+@import "bootstrap/bootstrap";
+@import "starter";
+@import "icons";
+@import "fonts";
