@@ -196,3 +196,36 @@ $icon-star: "\e904";
 @import "starter";
 @import "icons";
 @import "fonts";
+
+.ink-bg {
+    background-color: #0b1a34;
+    color: #fefefe;
+    
+    .btn {
+        border: 1px solid #fefefe;
+        border-radius: 0;
+        
+   
+    }
+    
+     .btn, a {
+        color: #fefefe;
+        }
+}
+
+.white-bg {
+    background-color: #fbfbfb;
+    color: #ccc;
+    
+    .btn {
+        border: 1px solid blue;
+        border-radius: 0;
+        
+   
+    }
+    
+     .btn, a {
+        color: #fefefe;
+        }
+}
+
