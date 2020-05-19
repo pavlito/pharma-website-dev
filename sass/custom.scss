@@ -193,9 +193,9 @@ $icon-email: "\e903";
 $icon-star: "\e904";
 
 @import "bootstrap/scss/bootstrap";
-@import "starter";
-@import "icons";
-@import "fonts";
+// @import "icons";
+// @import "fonts";
+@import "overlay";
 
 .ink-bg {
     background-color: #0b1a34;

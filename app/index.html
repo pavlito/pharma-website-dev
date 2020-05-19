@@ -33,8 +33,14 @@
 
 <body>
     <header>
-        <nav class="site-header sticky-top py-1">
-            <div class="container d-flex flex-column flex-md-row justify-content-between">
+        <nav class="site-header position-fixed fixed-top py-1">
+            <div class="container position-relative d-flex flex-column flex-md-row justify-content-center">
+                <button class="btn btn-outline-white position-absolute" id="toggle" type="button" aria-label="Toggle docs navigation">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30" height="30" focusable="false">
+                        <title>Menu</title>
+                        <path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"></path>
+                    </svg>
+                </button>
                 <a class="py-2" href="#" aria-label="Product">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mx-auto" role="img" viewBox="0 0 24 24" focusable="false">
                         <title>Product</title>
@@ -42,71 +48,64 @@
                         <path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94" />
                     </svg>
                 </a>
-                <a class="py-2 d-none d-md-inline-block" href="#">Tour</a>
-                <a class="py-2 d-none d-md-inline-block" href="#">Product</a>
-                <a class="py-2 d-none d-md-inline-block" href="#">Features</a>
-                <a class="py-2 d-none d-md-inline-block" href="#">Enterprise</a>
-                <a class="py-2 d-none d-md-inline-block" href="#">Support</a>
-                <a class="py-2 d-none d-md-inline-block" href="#">Pricing</a>
-                <a class="py-2 d-none d-md-inline-block" href="#">Cart</a>
             </div>
         </nav>
     </header>
-    
-    <!--      <section class="row align-items-center">
-            <div class="col-12 col-md-6 ">
-                <h2>Defining<span>Excelence</span></h2>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-                <button class="btn">Vezi Certificate</button>
-            </div>
-            <div class="img1 col-12 col-md-6">
-            </div>
-        </section>
--->
-      <div class="ink-bg row align-items-center">
-            
-            
-            <div class=" col-12 col-md-6 p-5">
-                <div class="pl-5">
-                <h2>Defining<span>Excelence</span></h2>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-                <button class="btn">Vezi Certificate</button>
+    <div class="overlay" id="overlay">
+        <a href="javascript:void(0)" class="closebtn btn btn-outline-white border-0">&times;</a>
+        <nav class="overlay-menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Work</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <!-- Layout Structure -->
+    <section class="sect-1">
+        <div class="container-fluid p-0">
+            <div class="ink-bg row no-gutters align-items-center">
+                <div class="col-12 col-md-6">
+                    <div class="px-md-5">
+                        <h2>Defining<span>Excelence</span></h2>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                        <button class="btn">Vezi Certificate</button>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <img src="images/woman.jpg" alt="" class="img-fluid">
                 </div>
             </div>
-            <img src="images/woman.jpg" class="col-12 col-md-6 p-0">
-
         </div>
+    </section>
+    <!--  <section class="sect-2">
         <div class="row align-items-center">
-            
-            <img src="images/factory.jpg" class="col-12 col-md-6 order-2 order-md-1 p-0">
+            <img src="images/factory.jpg" class="col-12 col-md-6 order-2 order-md-1 p-0 img-fluid">
             <div class="white-bg col-12 col-md-6 order-1 order-md-2 bg-wheel-right">
                 <div class="p-5">
-                <h2>Defining<span>Excelence</span></h2>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-                <button class="btn">Vezi Certificate</button>
+                    <h2>Defining<span>Excelence</span></h2>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                    <button class="btn">Vezi Certificate</button>
                 </div>
             </div>
-
         </div>
+    </section>
+    <section class="sect-3">
         <div class="row align-items-center">
-            
-            
             <div class="white-bg col-12 col-md-6 p-5 bg-wheel-left">
                 <div class="pl-5">
-                <h2>Defining<span>Excelence</span></h2>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-                <button class="btn">Vezi Certificate</button>
+                    <h2>Defining<span>Excelence</span></h2>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                    <button class="btn">Vezi Certificate</button>
                 </div>
             </div>
-            <img src="images/orangehat.jpg" class="col-12 col-md-6 p-0">
-
+            <img src="images/orangehat.jpg" class="col-12 col-md-6 p-0 img-fluid">
         </div>
-          
-   
-      
+    </section>
     <footer class="ink-bg">
         <div class="d-flex justify-content-center align-items-center p-4">
-            <img src="images/wheel.svg" height="70px">
+            <img src="images/wheel.svg">
             <h3>marchand</h3>
             <p>pharma tech</p>
         </div>
@@ -117,8 +116,8 @@
         <div class="footer-text text-center p-4">
             <h4>Marchand Pharma Tech S.A.</h4>
             <p>Priboiu, Str. Aleea Sinaia nr. 60C, Jud. Dâmbovița ,<br>
-            Număr de ordine in Registrul Comerțului: J15/603/2018<br>
-            Cod unic de înregistrare: 39401334</p>
+                Număr de ordine in Registrul Comerțului: J15/603/2018<br>
+                Cod unic de înregistrare: 39401334</p>
         </div>
         <div class="d-flex justify-content-center">
             <div class="line">
@@ -127,8 +126,7 @@
         <div class="copyright d-flex justify-content-center p-4">
             <p>© Copyright 2020 | All Rights Reserved | Privacy Policy</p>
         </div>
-        
-    </footer>
+    </footer> -->
     <!-- Optional JavaScript -->
     <script src="./libs/jquery/dist/jquery.min.js"></script>
     <script src="./libs/popper.js/dist/umd/popper.min.js"></script>
