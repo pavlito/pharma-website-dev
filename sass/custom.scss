@@ -194,8 +194,10 @@ $icon-star: "\e904";
 
 @import "bootstrap/scss/bootstrap";
 // @import "icons";
-// @import "fonts";
+//@import "fonts";
 @import "overlay";
+
+
 
 .ink-bg {
     background-color: #0b1a34;
@@ -214,12 +216,12 @@ $icon-star: "\e904";
 }
 
 .white-bg {
-    background-color: #fbfbfb;
     color: #ccc;
     
     .btn {
         border: 1px solid blue;
         border-radius: 0;
+        background-color: blue;
         
    
     }
@@ -229,3 +231,29 @@ $icon-star: "\e904";
         }
 }
 
+.sect-4 {
+    background-image: url(/app/images/png/p1-img4.png);
+}
+
+.sect-2 {
+    background-image: url(/app/images/png/bg-1.png);
+    background-repeat: no-repeat;
+    background-position: right -240px bottom 50px;
+    background-size: 30%;
+    
+}
+
+.sect-3 {
+    background-image: url(/app/images/png/bg-2.png);
+    background-repeat: no-repeat;
+    background-position: left -240px bottom 50px;
+    background-size: 400px;
+}
+
+
+.line {
+    color: #fff;
+    width: 60%;
+    height: 1px;
+    
+}
