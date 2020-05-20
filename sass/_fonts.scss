@@ -1,66 +1,128 @@
-@font-face {
-    font-family: 'fonts';
-    src: url('../fonts/fonts-Black.eot');
-    src: url('../fonts/fonts-Black.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/fonts-Black.woff') format('woff'),
-        url('../fonts/fonts-Black.ttf') format('truetype');
-    font-weight: 600;
-    font-style: normal;
-}
+// ============
+// Regular font
+//=============
 
 @font-face {
-    font-family: 'fonts';
-    src: url('../fonts/fonts-BlackItalic.eot');
-    src: url('../fonts/fonts-BlackItalic.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/fonts-BlackItalic.woff') format('woff'),
-        url('../fonts/fonts-BlackItalic.ttf') format('truetype');
-    font-weight: 600;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'fonts';
-    src: url('../fonts/fonts-Medium.eot');
-    src: url('../fonts/fonts-Medium.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/fonts-Medium.woff') format('woff'),
-        url('../fonts/fonts-Medium.ttf') format('truetype');
+    font-family: 'font';
+    src: url('../fonts/fonts-Regular.eot');
+    src: url('../fonts/fonts-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/fonts-Regular.woff') format('woff'),
+        url('../fonts/fonts-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
 }
 
+
 @font-face {
-    font-family: 'fonts';
-    src: url('../fonts/fonts-MediumItalic.eot');
-    src: url('../fonts/fonts-MediumItalic.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/fonts-MediumItalic.woff') format('woff'),
-        url('../fonts/fonts-MediumItalic.ttf') format('truetype');
+    font-family: 'font';
+    src: url('../fonts/fonts-Italic.eot');
+    src: url('../fonts/fonts-Italic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/fonts-Italic.woff') format('woff'),
+        url('../fonts/fonts-Italic.ttf') format('truetype');
     font-weight: 400;
     font-style: italic;
 }
 
 
+// ============
+// Bold font
+//=============
+
+
 @font-face {
-    font-family: 'fonts2';
-    src: url('../fonts/fonts2-Bold.eot');
-    src: url('../fonts/fonts2-Bold.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/fonts2-Bold.woff') format('woff'),
-        url('../fonts/fonts2-Bold.ttf') format('truetype');
-    font-weight: 400;
+    font-family: 'font';
+    src: url('../fonts/fonts-Bold.eot');
+    src: url('../fonts/fonts-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/fonts-Bold.woff') format('woff'),
+        url('../fonts/fonts-Bold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'font';
+    src: url('../fonts/fonts-BoldItalic.eot');
+    src: url('../fonts/fonts-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/fonts-BoldItalic.woff') format('woff'),
+        url('../fonts/fonts-BoldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+
+// ============
+// ExtraBold font
+//=============
+
+
+
+@font-face {
+    font-family: 'font';
+    src: url('../fonts/fonts-ExtraBold.eot');
+    src: url('../fonts/fonts-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/fonts-ExtraBold.woff') format('woff'),
+        url('../fonts/fonts-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'font';
+    src: url('../fonts/fonts-ExtraBoldItalic.eot');
+    src: url('../fonts/fonts-ExtraBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/fonts-ExtraBoldItalic.woff') format('woff'),
+        url('../fonts/fonts-ExtraBoldItalic.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+}
+
+
+// ============
+// Light font
+//=============
+
+
+@font-face {
+    font-family: 'font';
+    src: url('../fonts/fonts-Light.eot');
+    src: url('../fonts/fonts-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/fonts-Light.woff') format('woff'),
+        url('../fonts/fonts-Light.ttf') format('truetype');
+    font-weight: 200;
     font-style: normal;
 }
 
 
+
+
 @font-face {
-  font-family: '#{$icomoon-font-family}';
-  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot');
-  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot#iefix') format('embedded-opentype'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf') format('truetype'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff') format('woff'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg#{$icomoon-font-family}') format('svg');
-  font-weight: normal;
-  font-style: normal;
-  font-display: block;
+    font-family: 'font';
+    src: url('../fonts/fonts-LightItalic.eot');
+    src: url('../fonts/fonts-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/fonts-LightItalic.woff') format('woff'),
+        url('../fonts/fonts-LightItalic.ttf') format('truetype');
+    font-weight: 200;
+    font-style: italic;
 }
+
+
+
+// ============
+// Icon font
+//=============
+
+
+
+// @font-face {
+//   font-family: '#{$icomoon-font-family}';
+//   src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot');
+//   src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot#iefix') format('embedded-opentype'),
+//     url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf') format('truetype'),
+//     url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff') format('woff'),
+//     url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg#{$icomoon-font-family}') format('svg');
+//   font-weight: normal;
+//   font-style: normal;
+//   font-display: block;
+// }
 
 
 
