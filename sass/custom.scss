@@ -132,40 +132,55 @@ $spacers: map-merge(
 
 $font-size-base:                    1rem;
 $font-family-sans-serif:            'font' ,-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-$headings-font-weight:              bold;
+$font-weight-base:                  100;
 $body-color:                        $gray-800;
+
+$enable-shadows:                    true;
+
+$headings-font-weight:              bold;
 $headings-color:                    $gray-900;
 $headings-line-height:              1.5;
+$h1-font-size:                      $font-size-base * 3.75;
+
 $font-size-lg:                      $font-size-base * 1.125;
+$enable-responsive-font-sizes:      true;
+
+
 $navbar-light-color:                $gray-900;
 $navbar-light-hover-color:          $primary;
 $navbar-light-active-color:         $primary;
 $navbar-nav-link-padding-x:         1.25rem;
 $nav-link-padding-x:                2rem;
-$link-decoration:                   text-underline;
-$border-radius:                     0.5rem;
-$border-color:                      $gray-400;
 
+
+$link-decoration:                   text-underline;
+
+
+$border-color:                      $gray-400;
+$border-radius:                     0px;
+$border-radius-lg:                  0px;
+$border-radius-sm:                  0px;
+
+
+$btn-border-radius:                 $border-radius;
+$btn-border-radius-lg:              $border-radius-lg;
+$btn-border-radius-sm:              $border-radius-sm;
+$btn-font-weight:                   bold;
 
 
 $navbar-padding-y:                  1rem;
 $navbar-light-toggler-border-color:  transparent;
 $navbar-light-toggler-icon-bg:      url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'><path stroke='#{$primary}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2.8' d='M5,7h20 M2,15h26 M5,23h20'/></svg>");
-// Section
-
-$section-padding-y: 7.5rem;
-
-
 
 
 // Buttons
 
-$input-btn-padding-y:               0.75rem;
-$btn-box-shadow:                    null;
-$btn-border-radius:                 5rem;
-$btn-border-radius-lg:              5rem;
+$input-btn-padding-y:               0.8rem;
+$input-btn-padding-x:               2.5rem;
+$btn-box-shadow:                    0 0 5px rgba($gray-600, 0.8);
+
 $input-btn-padding-y-lg:            .875rem;
-$input-btn-border-width:            2px;
+$input-btn-border-width:            1px;
 // Box Shadow
 
 $card-border-color:                 $gray-300;
@@ -198,7 +213,9 @@ $icon-star: "\e904";
 @import "overlay";
 
 
-
+.site-header {
+    padding:0 5rem;
+}
 .sect-content {
     padding: 0 5rem;
 }
@@ -207,47 +224,71 @@ $icon-star: "\e904";
     padding:0;
 }
 
-
-
-
-.ink-bg {
-    background-color: #0b1a34;
-    color: #fefefe;
-    
-    .btn {
-        border: 1px solid #fefefe;
-        border-radius: 0;
-        
-   
-    }
-    
-     .btn, a {
-        color: #fefefe;
-        }
+img {
+    margin-top:-1px;
 }
 
-.white-bg {
-    color: #ccc;
-    
-    .btn {
-        border: 1px solid blue;
-        border-radius: 0;
-        background-color: blue;
-        
-   
+
+h1 {
+    font-weight: lighter;
+    letter-spacing: 2px;
+    word-break: break-all;
+
+    span {
+        font-weight: bold;
+        word-break: break-word;
     }
+}
+
+h2,h3,h4,h5,h6:not(footer h1,h2,h3,h4,h5,h6) {
+    &:after {
+        content:"";
+        width: 2rem;
+        height: 0.5rem;
+        background-color:$primary;
+        display: block;
+    }
+}
+
+
+.sect-1 {
+    h1 {
+        margin-bottom:1.5rem;
     
-     .btn, a {
-        color: #fefefe;
+        & + p {
+            margin-bottom:2rem;
+            font-weight: normal;
         }
+    }
+
+
+}
+
+section {
+    h2,h3,h4,h5,h6 {
+        margin-bottom:2rem;
+    }
+}
+
+.btn {
+    text-transform: uppercase;
+}
+
+.bg-dark {
+    color:$white;
+
+    .sect-title {
+        color:$white;
+    }
 }
 
 .sect-4 {
-    background-image: url(/app/images/png/p1-img4.png);
+    background-image: url(/images/png/p1-img4.png);
+    background-size:cover;
 }
 
 .sect-2 {
-    background-image: url(/app/images/png/bg-1.png);
+    background-image: url(/images/png/bg-1.png);
     background-repeat: no-repeat;
     background-position: right -240px bottom 50px;
     background-size: 30%;
@@ -255,7 +296,7 @@ $icon-star: "\e904";
 }
 
 .sect-3 {
-    background-image: url(/app/images/png/bg-2.png);
+    background-image: url(/images/png/bg-2.png);
     background-repeat: no-repeat;
     background-position: left -240px bottom 50px;
     background-size: 400px;
@@ -273,6 +314,10 @@ $icon-star: "\e904";
 @include media-breakpoint-down(md) {
     .sect-content {
     padding: 5rem 1rem;
+    }
+
+    .site-header {
+        padding:0 1rem;
     }
 
 } 
