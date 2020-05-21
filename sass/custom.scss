@@ -184,6 +184,10 @@ $btn-box-shadow:                    0 0 5px rgba($gray-600, 0.8);
 
 $input-btn-padding-y-lg:            .875rem;
 $input-btn-border-width:            1px;
+$input-btn-padding-x-sm:            2.5rem;
+$input-btn-padding-y-sm:            0.2rem;
+$input-btn-font-size-sm:            0.756rem;
+
 // Box Shadow
 
 $card-border-color:                 $gray-300;
@@ -197,8 +201,13 @@ $h-sup-font-size:             $font-size-base * 0.875;
 $h6-font-size:                $font-size-base * 1.125;
 // Icons
 
-
-
+$input-box-shadow:                      0;
+$input-color:                           $gray-800;
+$input-border-color:                    $gray-800;
+$input-placeholder-color:               $gray-800;
+$input-group-addon-color:               $gray-800;
+$input-group-addon-bg:                  transparent;
+$input-group-addon-border-color:        transparent;
 
 
 $icomoon-font-family: "icons";
@@ -429,7 +438,49 @@ section {
 }
 
 
+.form-control {
+    border-width:0 0 1px 0;
+    padding-left:1rem;
+    padding-right: 1rem;
+}
 
+.custom-file-input:lang(en) ~ .custom-file-label::after {
+    content:none;
+}
+
+.custom-file-label {
+     border-width: 0;
+    padding-left:1rem;
+    padding-right: 1rem;
+    font-weight: 400;
+}
+
+.custom-control-label {
+    font-weight: 400;
+}
+
+.input-group-text {
+    font-size:2rem;
+    padding-left:0;
+    padding-right: 1rem;
+}
+
+
+::-webkit-input-placeholder {
+  font-weight: 400;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+     font-weight: 400;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+     font-weight: 400;
+}
+
+:-ms-input-placeholder {
+     font-weight: 400;
+}
 
 footer {
     padding-top:3rem;
@@ -437,6 +488,8 @@ footer {
         width: 50%;
     }
 }
+
+
 
 @include media-breakpoint-down(md) {
     .sect-content {
