@@ -378,39 +378,79 @@ section {
     }
 }
 
-.sect-4 {
-    background-image: url(/images/png/p1-img4.png);
+.sect-4-bg {
+    background-image: url(/app/images/png/p1-img4.png);
     background-size:cover;
 }
 
-.sect-2 {
-    background-image: url(/images/png/bg-1.png);
+//(/app/images/png/p1-img4.png);
+
+//.sect-2 {
+//    background-image: url(/images/png/bg-1.png);
+//    background-repeat: no-repeat;
+//    background-position: right -240px bottom 50px;
+//    background-size: 30%;
+//    
+//}
+//
+//.sect-3 {
+//    background-image: url(/images/png/bg-2.png);
+//    background-repeat: no-repeat;
+//    background-position: left -240px bottom 50px;
+//    background-size: 400px;
+//}
+
+/*Background Weels*/
+
+.bg-wheel-right-p1 {
+    background-image: url(/app/images/svg/bg-1.svg);
+    background-position: right -200px bottom 0px;
     background-repeat: no-repeat;
-    background-position: right -240px bottom 50px;
-    background-size: 30%;
+}
+
+.bg-wheel-left-p1 {
+    background-image: url(/app/images/svg/bg-2.svg);
+    background-position: left -200px bottom 0px;
+    background-repeat: no-repeat;
+}
+
+.bg-wheel-top-p2 {
+    background-image: url(/app/images/svg/bg-2.svg);
+    background-position: left 0px bottom 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
     
 }
 
-.sect-3 {
-    background-image: url(/images/png/bg-2.png);
+.bg-wheel-left-p2 {
+    background-image: url(/app/images/svg/bg-1.svg);
+    background-position: left -200px bottom 0px;
     background-repeat: no-repeat;
-    background-position: left -240px bottom 50px;
-    background-size: 400px;
 }
 
+.bg-wheel-right-p2 {
+    background-image: url(/app/images/svg/bg-2.svg);
+    background-position: right -200px bottom 0px;
+    background-repeat: no-repeat;
+}
 
-.line {
-    color: #fff;
-    width: 60%;
-    height: 1px;
+.bg-wheel-right-p3 {
+    background-image: url(/app/images/svg/bg-1.svg);
+    background-position: right -200px bottom 0px;
+    background-repeat: no-repeat;
     
 }
+
+
+
+
+
 
 
 footer {
     padding-top:3rem;
     hr {
-        width: 70%;
+        width: 50%;
     }
 }
 
