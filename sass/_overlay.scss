@@ -1,116 +1,158 @@
-$color-background: #F5F5F5;
-$color-main: #1abc9c;
-$color-active: #FFF;
-$color-link: #FFF;
-
-$button-height: 27px;
-$button-width: 35px;
-
 
 #toggle {
     // left:0;
 }
 
-.overlay {
-  position: fixed;
-  background: $color-main;
-  top: 0;
-  left: 0;
-  z-index: 999999;
-  width: 100%;
-  height: 0%;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity .35s, visibility .35s, height .35s;
-  overflow: hidden;
-  .closebtn {
-     position: absolute;
-  top: 20px;
-  right: 45px;
-  font-size: 60px;
-  }
-  &.open {
-    opacity: .9;
-    visibility: visible;
-    height: 100%;
-    
-    li {
-      animation: fadeInRight .5s ease forwards;
-      animation-delay: .35s;
-      
-      &:nth-of-type(2) {
-        animation-delay: .4s;
-      }
-      &:nth-of-type(3) {
-        animation-delay: .45s;
-      }
-      &:nth-of-type(4) {
-        animation-delay: .50s;
-      }
-    }
-  }
-  nav {
-    position: relative;
-    height: 70%;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 50px;
-    font-family: 'Varela Round', serif;
-    font-weight: 400;
-    text-align: center;
-  }
-  ul {
-    list-style: none;
-    padding: 0;
-    margin: 0 auto;
+.closebtn {
+    color: $white;
+    font-size: 4rem;
+    font-weight: 500;
+    text-decoration: none;
+    float: left;
     display: inline-block;
     position: relative;
-    height: 100%; 
-    
-    li {
-      display: block;
-      height: 25%;
-      height: calc(100% / 4);
-      min-height: 50px;
-      position: relative;
-      opacity: 0;
-      
-      a {
-        display: block;
-        position: relative;
-        color: $color-link;
-        text-decoration: none;
-        overflow: hidden;
-        
-        &:hover:after,
-         &:focus:after,
-         &:active:after {
-           width: 100%;
-         }
-        
-        &:after {
-          content: '';
-          position: absolute;
-          bottom: 0;
-          left: 50%;
-          width: 0%;
-          transform: translateX(-50%);
-          height: 3px;
-          background: $color-link;
-          transition: .35s;
-        }
-      }
+    position: absolute;
+    display: flex;
+    align-items: center;
+    span {
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: $nav-item-font-size;
+        letter-spacing: 1px;
+        margin-left: 0.3rem;
     }
-  }
+
+    @include transition($transition-base);
+
+    &:hover {
+        text-decoration: none;
+
+        @include transition($transition-base);
+
+        color: rgba($white, 0.7);
+    }
+}
+
+.overlay {
+    .navbar-brand {
+        margin: 0 auto;
+
+        // img {
+        //   height:4rem;
+        // }
+
+    }
+}
+
+.overlay {
+    position: fixed;
+    background: $gray-800;
+    top: 0;
+    left: 0;
+    z-index: 999999;
+    width: 100%;
+    height: 0%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .1s, visibility .1s, height .1s;
+
+    // overflow: hidden;
+
+    &.open {
+        opacity: 1;
+        visibility: visible;
+        height: 100%;
+
+        li {
+            animation: fadeInRight .3s ease forwards;
+            animation-delay: .2s;
+
+            &:nth-of-type(2) {
+                animation-delay: .2s;
+            }
+
+            &:nth-of-type(3) {
+                animation-delay: .25s;
+            }
+
+            &:nth-of-type(4) {
+                animation-delay: .2s;
+            }
+        }
+    }
+
+    nav {
+        position: relative;
+        height: 70%;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 2rem;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0 auto;
+        display: inline-block;
+        position: relative;
+        height: 100%;
+
+        li {
+            display: block;
+            margin-bottom: 2rem;
+            position: relative;
+            opacity: 0;
+
+            a {
+                display: block;
+                position: relative;
+                color: $white;
+                text-decoration: none;
+                overflow: hidden;
+
+                &:hover:after,
+                &:focus:after,
+                &:active:after {
+                    width: 100%;
+                }
+
+                &:after {
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    left: 50%;
+                    width: 0%;
+                    transform: translateX(-50%);
+                    height: 3px;
+                    background: $white;
+                    transition: .35s;
+                }
+            }
+        }
+    }
 }
 
 @keyframes fadeInRight {
-  0% {
-    opacity: 0;
-    left: 20%;
-  }
-  100% {
-    opacity: 1;
-    left: 0;
-  }
+    0% {
+        opacity: 0;
+        left: 20%;
+    }
+
+    100% {
+        opacity: 1;
+        left: 0;
+    }
 }
+
+
+
+@include media-breakpoint-down(md) {
+  .overlay {
+    nav {
+      font-size:1.4rem;
+    }
+  }
+  }

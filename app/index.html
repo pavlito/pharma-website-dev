@@ -33,23 +33,31 @@
 
 <body>
     <header>
-        <nav class="site-header position-absolute fixed-top py-1">
-            <div class="container-fluid position-relative d-flex  justify-content-between align-item-center">
-                <button class="btn btn-outline-white" id="toggle" type="button" aria-label="Toggle docs navigation">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30" height="30" focusable="false">
-                        <title>Menu</title>
-                        <path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"></path>
-                    </svg>
+        <nav class="site-header position-absolute fixed-topnavbar navbar-light w-100">
+            <div class="d-flex align-items-center justify-content-center w-100">
+                <button class="navbar-toggler" id="toggle" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <img src="images/svg/menu.svg" class="menu" alt="">
+                    <span>Meniu</span>
                 </button>
-                <a class="py-2" href="#" aria-label="Product">
-                    <img src="images/png/logo.png">
-                </a>
-                <span class="text-white">dropdown</span>
+                <a class="navbar-brand" href="#"><img src="images/png/logo.png"></a>
+                <li class="nav-item dropdown d-flex">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Ro
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">En</a>
+                        <a class="dropdown-item" href="#">It</a>
+                        <a class="dropdown-item" href="#">De</a>
+                    </div>
+                </li>
             </div>
         </nav>
     </header>
     <div class="overlay" id="overlay">
-        <a href="javascript:void(0)" class="closebtn btn btn-outline-white border-0">&times;</a>
+        <div class="d-flex align-items-center site-header">
+            <a href="javascript:void(0)" class="closebtn">&times; <span>Close</span></a>
+            <a class="navbar-brand" href="#"><img src="images/png/logo.png"></a>
+        </div>
         <nav class="overlay-menu">
             <ul>
                 <li><a href="#">Home</a></li>
@@ -70,8 +78,9 @@
                         <a class="btn btn-outline btn-outline-white" href="#" role="button">Vezi Certificate</a>
                     </div>
                 </div>
-                <div class="col-12 col-lg-6 order-1 order-lg-2">
+                <div class="col-12 col-lg-6 order-1 order-lg-2 d-flex align-items-center justify-content-center">
                     <img src="images/png/p1-img1.png" alt="" class="w-100 h-auto sect-img">
+                    <a href="#" class="play-video"><img src="images/png/icon-play.png"></a>
                 </div>
             </div>
         </div>
@@ -118,7 +127,7 @@
             </div>
         </div>
     </section>
-    <section class="sect-4">
+    <section class="sect-4 sect-cta">
         <div class="container">
             <!--Ovde container-fluid NE RADI, pa sam stavio obican-->
             <div class="row justify-content-center align-items-center py-4">
@@ -128,14 +137,13 @@
         </div>
     </section>
     <footer class="bg-dark">
-        <div class="container">
+        <div class="container-fluid">
             <div class="d-flex justify-content-center p-3">
                 <img src="images/png/logo.png">
             </div>
             <hr class="border-white">
-            
             <div class="footer-text text-center p-4">
-                <p class="h4 text-white d-inline-block mb-4">Marchand Pharma Tech S.A.</p>
+                <p class="h5 text-white d-inline-block mb-4">Marchand Pharma Tech S.A.</p>
                 <p>Priboiu, Str. Aleea Sinaia nr. 60C, Jud. Dâmbovița ,<br>
                     Număr de ordine in Registrul Comerțului: J15/603/2018<br>
                     Cod unic de înregistrare: 39401334</p>
