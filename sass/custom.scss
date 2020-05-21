@@ -204,14 +204,22 @@ $h6-font-size:                $font-size-base * 1.125;
 $icomoon-font-family: "icons";
 $icomoon-font-path: "../fonts/icons";
 
-$icon-arrow-circle-down: "\e900";
-$icon-checkmark-circle: "\e901";
-$icon-checkmark-outline: "\e902";
-$icon-email: "\e903";
-$icon-star: "\e904";
+$icon-address: "\e900";
+$icon-calendar: "\e901";
+$icon-cv: "\e902";
+$icon-document: "\e903";
+$icon-mail: "\e904";
+$icon-message: "\e905";
+$icon-phone: "\e906";
+$icon-pin: "\e907";
+$icon-play: "\e908";
+$icon-play-filled: "\e909";
+$icon-subject: "\e90a";
+$icon-user: "\e90b";
+
 
 @import "bootstrap/scss/bootstrap";
-// @import "icons";
+@import "icons";
 @import "fonts";
 @import "overlay";
 
