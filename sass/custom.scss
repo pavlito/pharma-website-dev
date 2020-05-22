@@ -154,6 +154,8 @@ $nav-link-padding-x:                2rem;
 $nav-item-font-size:                0.75rem;
 
 
+$nav-link-padding-y:                1rem;
+
 $link-decoration:                   text-underline;
 
 
@@ -343,6 +345,10 @@ h1 {
         font-weight: bold;
         word-break: break-word;
     }
+}
+
+h1,h2,h3,h4,h5,h6 {
+    line-height: 1.2;
 }
 
 h2,h3,h4,h5,h6:not(footer h1,h2,h3,h4,h5,h6) {
