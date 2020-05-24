@@ -342,7 +342,7 @@ img {
         width: 100%;
     }
 }
-h1 {
+.sect-title {
     font-weight: lighter;
     letter-spacing: 2px;
     word-break: break-all;
@@ -357,7 +357,8 @@ h1,h2,h3,h4,h5,h6 {
     line-height: 1.2;
 }
 
-h2,h3,h4,h5,h6:not(footer h1,h2,h3,h4,h5,h6) {
+
+.section-title {
     &:after {
         content:"";
         width: 2rem;
@@ -366,6 +367,7 @@ h2,h3,h4,h5,h6:not(footer h1,h2,h3,h4,h5,h6) {
         display: block;
     }
 }
+
 
 .sect-1 {
     h1 {
@@ -623,9 +625,6 @@ footer {
     }
 
 }
-
-
-
 
 .index {
     z-index: 1;
