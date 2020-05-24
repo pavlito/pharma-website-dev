@@ -265,7 +265,7 @@ $icon-user: "\e90b";
 
 }
 .sect-content {
-    padding: 0 5rem;
+    padding: 2.5rem 5rem;
 }
 
 .container-fluid {
@@ -278,6 +278,11 @@ $icon-user: "\e90b";
 
 img {
     margin-top:-1px;
+}
+
+.no-guuter
+img {
+    object-fit:cover;
 }
 
 .navbar-brand {
