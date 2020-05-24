@@ -7,4 +7,6 @@ $(document).ready(function() {
         $("body").toggleClass("overflow-hidden");
         $('#overlay').toggleClass('open');
     });
+
+    $(".menu-item").last().addClass("border-bottom");
 });
