@@ -591,6 +591,7 @@ footer {
         span {
             display: none;
         }
+                
     }
 
 
@@ -600,14 +601,35 @@ footer {
         width: 100%;
     }
 }
+    
+//    .bg-wheel-right-p1 {
+//        background-image: none;
+//    }
+//    
+//    .bg-wheel-left-p1 {
+//        background-image: none;
+//    }
+//    
+//    .bg-wheel-top-p2 {
+//        background-image: none;
+//    }
+//    
+//    .bg-wheel-left-p2 {
+//        background-image: none;
+//    }
+    
+    .sect-1 h1 {
+        margin-top: 0;
+    }
 
 }
 
 
 
 
-
-
+.index {
+    z-index: 1;
+}
 
 
 
