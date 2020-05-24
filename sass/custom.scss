@@ -266,6 +266,7 @@ $icon-user: "\e90b";
 }
 .sect-content {
     padding: 2.5rem 5rem;
+    flex-:0 1 100%;
 }
 
 .container-fluid {
@@ -373,7 +374,7 @@ h1,h2,h3,h4,h5,h6 {
     h1 {
         margin-bottom:1.5rem;
         margin-top: 5rem;
-    
+        font-weight: $h1-custom-size;
         & + p {
             margin-bottom:2rem;
             font-weight: normal;
