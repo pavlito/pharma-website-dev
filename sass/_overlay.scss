@@ -7,13 +7,16 @@
     font-size: 4rem;
     font-weight: 500;
     text-decoration: none;
-    float: left;
+    margin-left:auto;
     display: inline-block;
     position: relative;
-    position: absolute;
     display: flex;
     align-items: center;
     line-height: 0;
+    order:1; 
+    img {
+        width: 1.4rem;
+    }
 
     span {
         color: #fff;
@@ -38,13 +41,12 @@
 
 .overlay {
     .navbar-brand {
-        margin: 0 auto;
         
 
         // img {
         //   height:4rem;
         // }
-   
+        margin:0;
     }
 }
 
@@ -90,13 +92,12 @@
         margin-top: 3rem;
         font-size: 1.25rem;
         font-weight: 400;
-        text-align: center;
     }
 
     ul {
         list-style: none;
-        padding: 0;
-        margin: 0 auto;
+        padding: 0 10.5rem;
+        // margin: 0 auto;
 
         // display: inline-block;
 
@@ -105,29 +106,36 @@
 
         li {
             display: block;
+            text-align: left;
             margin-bottom: 2rem;
-            position: relative;
+            // position: relative;
             opacity: 0;
+
             &.active,
             &.current-menu-item {
                 a {
                     font-weight: bold;
                 }
             }
+
             &.border-bottom {
-                padding-bottom:1rem;
+                padding-bottom: 1rem;
             }
 
             &.lang-item {
                 display: inline-block;
+                display: flex;
                 a {
                     &.active {
                         font-weight: bold;
+
+                        &:first-child {
+                            margin-right: 1rem;
+                        }
                     }
                 }
-                &:first-child {
-                    margin-right: 2rem;
-                }
+
+
             }
 
             a {
@@ -173,26 +181,31 @@
 
 @include media-breakpoint-down(md) {
     .overlay {
-                
         nav {
-            font-size: 1.25rem;
-            
+            font-size: 1rem;
+        }
+
+          ul {
+            padding:0 1rem;
+
+            li {
+                margin-bottom: 1rem;
             }
+        }
     }
 }
-    
+
+
 @include media-breakpoint-down(sm) {
     .overlay {
-        
+
+
         &.open {
-        width: 100%;
-            
-          nav {
-            font-size: 1rem;
-            
+            width: 100%;
+
+            nav {
+                font-size: 0.8rem;
             }
-            
-
-
+        }
     }
 }
